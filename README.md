@@ -3,7 +3,7 @@ Sometimes it can be useful to filter out specific items from a data frame, or to
 
 You can try out the app [here](https://shiny.epi-interactive.com/selection_modal)
 
-![alt text](selection-modal.PNG)
+![alt text](selection-modal.png)
 
 ## How it works
 load the selection modal functionality
