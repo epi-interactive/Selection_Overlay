@@ -3,7 +3,7 @@ Sometimes it can be useful to filter out specific items from a data frame, or to
 
 Data can be included or excluded from the current selection, either individually or in bulk, using the selection modal interface.
 
-You can try out the app [here](https://shiny.epi-interactive.com/selection_modal)
+You can try out the app [here](https://shiny.epi-interactive.com/apps/selection_modal)
 
 ![alt text](selection-modal.png)
 
