@@ -1,0 +1,17 @@
+#world_map {
+height: 70vh !important;
+}
+
+.item-filter-row {
+  display: flex;
+}
+
+.item-filter-btn-col {
+  display: grid;
+  align-content: center;
+}
+
+.item-filter-btn {
+  max-height: 50px;
+  margin: 10px;
+}
