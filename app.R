@@ -82,7 +82,7 @@
   ui <- fluidPage(
     tagList(
       useShinyjs(),
-      tags$link(rel = "stylesheet", type = "text/css", href = "css/custom.css"),
+      tags$link(rel = "stylesheet", type = "text/css", href = "css/custom.css")
     ),
     fluidRow(
       wellPanel(
@@ -93,7 +93,7 @@
     fluidRow(
       column(6,
              wellPanel(style = "text-align: center;",
-               actionButton("show", strong("Open Selection Modal")),
+               actionButton("show", strong("Open Selection Modal"))
              ),
              
              #table
