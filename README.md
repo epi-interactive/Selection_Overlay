@@ -38,7 +38,7 @@ observeEvent(input$show, {
     })
 ```
 
-Ensure that any outputs are using the **included** part of the reactiveValues
+Ensure that any outputs are using the **included** (*inc*) part of the reactiveValues object
 ```
 world_table_details <- reactive({
       datatable(data = select(as.data.frame(RV$inc), iso_a2, name_long, continent, pop),
