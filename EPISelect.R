@@ -1,10 +1,25 @@
+
+##################################
+# Created by EPI-interactive
+# 27 Feb 2020
+# https://www.epi-interactive.com
+##################################
+
+
 EPISelectUI <- function(id, modalTitle, includeTitle, excludeTitle) {
   ns <- NS(id)
 
   modalDialog(
     ### layout###
-    titlePanel(modalTitle),
-
+    fluidRow(
+      column(10, 
+             h1(style = "padding: 0px 10px 10px 10px; margin-top: 0px;", modalTitle)
+             ),
+      column(2, style = "text-align: right;",
+             actionButton(ns("closeBtn"), "Close")
+             )
+    ),
+    hr(),
     fluidRow(
       class = "item-filter-row",
       # Included lakes list

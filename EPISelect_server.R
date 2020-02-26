@@ -1,3 +1,11 @@
+
+##################################
+# Created by EPI-interactive
+# 27 Feb 2020
+# https://www.epi-interactive.com
+##################################
+
+
 EPISelect <- function(input, output, session, data) {
   output$included_items <- renderDT(tableHTML(data$inc))
   output$excluded_items <- renderDT(tableHTML(data$exc))
@@ -83,5 +91,9 @@ EPISelect <- function(input, output, session, data) {
   observeEvent(input$include_all_btn, {
     data$inc <- rbind(data$inc, data$exc)
     data$exc <- data$exc[0, ]
+  })
+  
+  observeEvent(input$closeBtn, {
+    removeModal()
   })
 }
