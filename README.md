@@ -43,7 +43,7 @@ Listen for the click and show a modal:
 ```
 
 Ensure that any outputs are using the **included** (*inc*) part of the reactiveValues object
-```
+``` r
     world_table_details <- reactive({
       datatable(
                 data = select(as.data.frame(RV$inc), iso_a2, name_long, continent, pop),
