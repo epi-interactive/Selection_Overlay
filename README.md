@@ -1,14 +1,14 @@
-# Selection Modal
-Sometimes it can be useful to filter out specific items from a data frame, or to only include specific items. This selection modal example provides functionality for filtering out specific observations from a dataframe as a part of the application interface, such that any outputs using this data will update to match the selection automatically.
+# Selection Overlay
+Sometimes it can be useful to filter out specific items from a data frame, or to only include specific items. This selection overlay example provides functionality for filtering out specific observations from a dataframe as a part of the application interface, such that any outputs using this data will update to match the selection automatically.
 
-Data can be included or excluded from the current selection, either individually or in bulk, using the selection modal interface. In this example, the data being displayed and filtered represents the total population of countries in 2014.
+Data can be included or excluded from the current selection, either individually or in bulk, using the selection overlay interface. In this example, the data being displayed and filtered represents the total population of countries in 2014.
 
-You can try out the app [here](https://shiny.epi-interactive.com/apps/selection_modal)
+You can try out the app [here](https://shiny.epi-interactive.com/apps/selection_overlay)
 
 ![alt text](selection-modal.png)
 
 ## How it works
-Load the selection modal functionality:
+Load the selection overlay functionality:
 ``` r
   source("EPISelect.R")
   source("EPISelect_server.R")
@@ -28,7 +28,7 @@ Call the module within your server function, passing the reactiveValues object a
     callModule(EPISelect, "data", RV)
 ```
 
-Listen for the click and show a modal:
+Listen for the click and show the overlay:
 ``` r
     observeEvent(input$show, {
         showModal(
