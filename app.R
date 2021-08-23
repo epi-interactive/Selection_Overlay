@@ -93,7 +93,7 @@
     ),
     fluidRow(
       wellPanel(
-        h1(style = "text-align: center;", "Choose your own countries with the Selection Modal")
+        h1(style = "text-align: center;", "Choose your own countries with the Selection Overlay")
       )
       ),
     
