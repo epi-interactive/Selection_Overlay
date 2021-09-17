@@ -91,25 +91,19 @@
       useShinyjs(),
       tags$link(rel = "stylesheet", type = "text/css", href = "css/custom.css")
     ),
-    fluidRow(
-      wellPanel(
-        h1(style = "text-align: center;", "Choose your own countries with the Selection Overlay")
-      )
-      ),
-    
-    fluidRow(
-      column(6,
-             wellPanel(style = "text-align: center;",
-               actionButton("show", strong("Open Selection Modal"))
-             ),
-             
-             #table
-             DT::dataTableOutput("world_chart")
-             ),
-      
-      column(6,
-             #leaflet map
-             leafletOutput("world_map")
+    fluidRow(class="header-row",
+        h1("Selection Overlay"),
+        tags$img(src="images/Epi_Logo.png", width= "200px", height = "30px")
+    ),
+    fluidRow(class="main",
+      actionButton("show", strong("Open Selection Modal")),
+      div(
+        column(6,
+            DT::dataTableOutput("world_chart")
+        ),
+        column(6,
+            leafletOutput("world_map", height="481px")
+        )
       )
     )
   )

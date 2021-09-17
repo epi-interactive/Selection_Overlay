@@ -11,16 +11,9 @@ EPISelectUI <- function(id, modalTitle, includeTitle, excludeTitle) {
 
   modalDialog(
     ### layout###
-    fluidRow(
-      column(10, 
-             h1(style = "padding: 0px 10px 10px 10px; margin-top: 0px;", modalTitle)
-             ),
-      column(2, style = "text-align: right;",
-             actionButton(ns("closeBtn"), "Close")
-             )
-    ),
+    h1(modalTitle),
     hr(),
-    fluidRow(
+    div(
       class = "item-filter-row",
       # Included lakes list
       column(
