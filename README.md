@@ -3,7 +3,7 @@ Sometimes it can be useful to filter out specific items from a data frame, or to
 
 Data can be included or excluded from the current selection, either individually or in bulk, using the selection overlay interface. In this example, the data being displayed and filtered represents the total population of countries in 2014.
 
-You can try out the app [here](https://shiny.epi-interactive.com/apps/selection_overlay)
+You can try out the app [here](https://rshiny2.epi-interactive.com/apps/selection_overlay)
 
 ![alt text](selection-modal.png)
 
