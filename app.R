@@ -11,6 +11,7 @@
   #Libraries used for the data
   library(sf)
   library(spData)
+  library(readxl)
   
   # Libraries for the visualisations
   library(DT)
